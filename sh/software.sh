@@ -9,7 +9,7 @@ fi
 # Install Flatpak and Snapd
 sudo apt update -y
 sudo apt install flatpak snapd -y
-sudo apt install nala wget curl -y
+sudo apt install nala wget curl vlc -y
 
 # Install corresponding Flatpak backend for the detected desktop environment
 if [ "$DESKTOP_ENV" = "gnome" ]; then
