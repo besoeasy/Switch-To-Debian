@@ -43,6 +43,9 @@ sudo apt install git -y
 # Install vlc
 sudo apt install vlc -y
 
+# Install Neofetch
+sudo apt install neofetch -y
+
 # Snap Code
 sudo snap install core
 
@@ -64,10 +67,12 @@ sudo snap install discord
 # Install Node.js
 sudo snap install node --classic
 
-
 # Download Google Chrome .deb package
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P /tmp 
 sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb
 
 # Install dependencies if there are any unmet dependencies
 sudo apt-get install -f -y
+
+# Display Neofetch
+neofetch
