@@ -77,4 +77,8 @@ sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb
 sudo apt-get install -f -y
 
 # Display Neofetch
+echo " "
+echo " "
 neofetch
+echo " "
+echo " "
