@@ -11,9 +11,13 @@ sudo apt update -y
 sudo apt install flatpak snapd -y
 
 if [ "$DESKTOP_ENV" = "gnome" ]; then
+    echo "Its Gnome .............."
+
     sudo apt install gnome-software-plugin-flatpak -y
     sudo apt install gnome-software-plugin-snap -y
 elif [ "$DESKTOP_ENV" = "kde" ]; then
+    echo "Its KDE .............."
+
     sudo apt install plasma-discover-backend-flatpak -y
     sudo apt install plasma-discover-backend-snap -y
 else
