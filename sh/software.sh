@@ -26,4 +26,3 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 # Add Snap Store repository
 sudo snap install core
-sudo snap install snap-store
