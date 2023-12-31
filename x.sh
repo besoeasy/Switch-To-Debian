@@ -22,7 +22,6 @@ elif [ "$DESKTOP_ENV" = "kde" ]; then
     sudo apt install plasma-discover-backend-snap -y
 else
     echo "Desktop environment not recognized or not supported."
-    exit 1
 fi
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
