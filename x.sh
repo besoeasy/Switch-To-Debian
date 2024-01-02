@@ -81,9 +81,7 @@ else
     echo "Google Chrome is already installed."
 fi
 
-# Display Neofetch
-echo " "
-echo " "
+# Display system information using Neofetch
+echo -e "\n\n"
 neofetch
-echo " "
-echo " "
+echo -e "\n\n"
