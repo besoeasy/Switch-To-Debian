@@ -68,12 +68,18 @@ sudo snap install node --classic
 # Install Brave Browser
 sudo snap install brave
 
-# Download Google Chrome .deb package
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P /tmp 
-sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb
+# Check if Google Chrome is installed
+if ! command -v google-chrome; then
+    echo "Google Chrome is not installed. Proceeding with installation..."
+    # Download Google Chrome .deb package
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P /tmp 
+    sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb
 
-# Install dependencies if there are any unmet dependencies
-sudo apt-get install -f -y
+    # Install dependencies if there are any unmet dependencies
+    sudo apt-get install -f -y
+else
+    echo "Google Chrome is already installed."
+fi
 
 # Display Neofetch
 echo " "
