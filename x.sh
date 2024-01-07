@@ -69,7 +69,7 @@ sudo snap install node --classic
 sudo snap install brave
 
 # Install Tor Browser
-sudo flatpak install flathub com.github.micahflee.torbrowser-launcher
+sudo flatpak install flathub com.github.micahflee.torbrowser-launcher -y
 
 # Check if Google Chrome is installed
 if ! command -v google-chrome; then
