@@ -8,7 +8,9 @@ fi
 
 sudo apt update -y
 
-sudo apt install flatpak snapd -y
+sudo apt install flatpak snapd nala -y
+
+sudo nala update -y && sudo nala upgrade -y
 
 if [ "$DESKTOP_ENV" = "gnome" ]; then
     echo "Its Gnome .............."
@@ -25,9 +27,6 @@ else
 fi
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-# Install nala
-sudo apt install nala -y
 
 # Install wget
 sudo apt install wget -y
