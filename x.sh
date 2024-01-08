@@ -70,6 +70,8 @@ sudo snap install brave
 # Install Tor Browser
 sudo flatpak install flathub com.github.micahflee.torbrowser-launcher -y
 
+sudo flatpak install flathub org.kde.kdenlive -y
+
 # Check if Google Chrome is installed
 if ! command -v google-chrome; then
     echo "Google Chrome is not installed. Proceeding with installation..."
