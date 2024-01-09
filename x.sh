@@ -10,7 +10,7 @@ sudo apt update -y
 
 sudo apt install flatpak snapd nala -y
 
-sudo nala update -y && sudo nala upgrade -y
+sudo apt upgrade -y
 
 if [ "$DESKTOP_ENV" = "gnome" ]; then
     echo "Its Gnome .............."
